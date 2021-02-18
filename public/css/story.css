@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Libre+Baskerville&display=swap');
+
+body {
+    color: #0f0f0f;
+}
+
+/* Progress bar*/
+#progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0.5rem;
+    width: 100%;
+    background-color: transparent;
+    /*transition: all 0.5s ease;*/
+  }
+
+#progress-bar {
+    height: 0.5rem;
+    width: 0%;
+    background-color: #676767;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 3rem;
+}
+
+h2 {
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+h2 span {
+    font-size: 1.3rem;
+}
+
+/* Symbol */
+#symbol-container {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 4rem; */
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-right: 32px solid transparent;
+  border-bottom: 56px solid #fff;
+  border-left: 32px solid transparent;
+  position: relative;
+}
+
+
+#triangle:after {
+  width: 0;
+  height: 0;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid #000;
+  border-left: 40px solid transparent;
+  position: absolute;
+  top: -9px;
+  left: -40px;
+  z-index: -1;
+  content: "";
+}
+
+#circle {
+  width: 33px;
+  height: 33px;
+  border: 5px solid #000;
+  border-radius: 50%;
+  position: relative;
+  top: 15px;
+  right: 22px;
+}
+
+#line {
+  width: 5.5px;
+  height: 55px;
+  background: #000;
+  position: absolute;
+  top: 0px;
+  left: -2.5px;
+  transition: left 1s;
+}
+
+/* Text */
+#text-container {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+p {
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-family: 'Crimson Text', serif;
+    text-align: justify;
+}
+
+#first-section::first-letter {
+    float:left;
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-right: 0.4rem;
+}
+
+#link-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+#link-container a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0f0f0f;
+}
+
+#link-container a:hover {
+  color: rgb(71, 70, 70);
+}
+
+
+@media only screen and (max-width: 600px) {
+  p {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  #contact-container {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+  }
+
+  #contact {
+        padding-right: 0;
+  }
+}

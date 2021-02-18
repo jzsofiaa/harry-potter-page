@@ -1,0 +1,89 @@
+extends navbar
+
+block content
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='public/css/houses-prologue.css')
+    link(rel='stylesheet', href='public/css/flip-cards.css')
+    body
+    div#main-container
+        div#prologue-container
+            div#title Hogwarts Houses
+            div#houses-description Hogwarts is divided into four houses, each bearing the last name of its founder:
+              br
+              | Godric Gryffindor, Salazar Slytherin, Rowena Ravenclaw and Helga Hufflepuff.
+              br 
+              |  Houses at Hogwarts were both the living and learning communities for its students.
+              br
+              |  Each year's group of students in the same house shares the same dormitory and many classes.
+              br
+              |  Each house also has its own Quidditch team that competes for the Quidditch Cup. 
+              br
+              |  The houses compete throughout the school year, by earning and losing points for various activities.
+              br
+              | The house with the most points wins the House Cup.
+            div#discover Let's discover the houses!
+            div#mobile-view-description Click on the card!
+        
+        div#cards-container
+            //- Gryffindor card
+            div#gryffindor-card.card
+                div#gryffindor-card-front.card-front
+                  img(src="public/images/houses/gryffindor.png" alt="Gryffindor")
+                div#gryffindor-card-back.card-back
+                    div#gryffindor-house.house-name Gryffindor
+                    div#gryffindor-quote.house-quote
+                      p
+                        You might belong in Gryffindor,
+                        br
+                        | Where dwell the brave at heart,
+                        br
+                        | Their daring, nerve, and chivalry
+                        br
+                        | Set Gryffindors apart.
+            //- Slytherin card
+            div.card#slytherin-card
+                div#slytherin-card-front.card-front
+                  img(src="public/images/houses/slytherin.png" alt="Slytherin")
+                div#slytherin-card-back.card-back
+                    div#slytherin-house.house-name Slytherin
+                    div#slytherin-quote.house-quote
+                      p
+                        Or perhaps in Slytherin
+                        br
+                        | You'll make your real friends,
+                        br
+                        | Those cunning folks use any means 
+                        br
+                        | To achieve their ends.
+            //- Ravenclaw card
+            div.card#ravenclaw-card
+                div#ravenclaw-card-front.card-front
+                  img(src="public/images/houses/ravenclaw.png" alt="Ravenclaw")
+                div#ravenclaw-card-back.card-back
+                    div#ravenclaw-house.house-name Ravenclaw
+                    div#ravenclaw-quote.house-quote
+                      p
+                        Or yet in wise old Ravenclaw,
+                        br
+                        | if you've a ready mind,
+                        br
+                        | Where those of wit and learning,
+                        br
+                        | Will always find their kind.
+            //- Hufflepuff card
+            div.card
+                div#hufflepuff-card-front.card-front
+                  img(src="public/images/houses/hufflepuff.png" alt="Hufflepuff")
+                div#hufflepuff-card-back.card-back
+                    div#hufflepuff-house.house-name Hufflepuff
+                    div#hufflepuff-quote.house-quote
+                      p
+                        You might belong in Hufflepuff,
+                        br
+                        | Where they are just and loyal,
+                        br
+                        | Those patient Hufflepuffs are true
+                        br
+                        | And unafraid of toil.
+                        
+    script(type='text/javascript', src="/public/js/req.js")

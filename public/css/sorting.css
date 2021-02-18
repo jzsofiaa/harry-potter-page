@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+}
+
+html {
+  background-color: #090510;
+}
+
+body {
+  color: #fff;
+  font-family: Times, serif;
+}
+
+#sorting-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+#sorting-generator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#sorting-description {
+  width: 30rem;
+}
+
+#description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+#quote {
+  padding: 2rem 3rem 0 3rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#by {
+  padding-top: 1rem;
+  padding-right: 3rem;
+  font-size: 1rem;
+  text-align: right;
+}
+
+#generator {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30rem;
+  /* margin-bottom: 3rem; */
+}
+
+#sorting-hat-btn {
+  width: 15rem;
+  height: 11rem;
+  cursor: pointer;
+  transition: linear 0.5s;
+}
+
+#sorting-hat-btn:hover {
+  transform: scale(1.2);
+}
+
+#find-out {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+
+#sorting-result {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 3.5rem;
+  font-family: 'Crimson Text', serif;
+  letter-spacing: 0.2rem;
+}
+
+ #sorting-result-description {
+   font-size: 1.15rem;
+   font-family: 'Crimson Text', serif;
+   letter-spacing: 0.1rem;
+   text-align: center;
+ }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #sorting-title {
+     text-align: center;
+  }
+
+  #description {
+    text-align: justify;
+  }
+
+  #sorting-description {
+    width: 20rem;
+  }
+
+  #quote {
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  #by {
+    padding-right: 1rem;
+  }
+
+  #generator {
+    margin-bottom: 4rem;
+  }
+
+  #sorting-hat-btn {
+    margin-top: 3rem;
+    width: 15rem;
+    height: 10rem;
+  }
+
+  #find-out {
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  #sorting-result-description {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 767px){
+  #quote {
+    padding-top: 2rem;
+  }
+
+  #by {
+    padding-right: 1rem;
+  }
+
+  #sorting-hat-btn {
+    margin-top: 2rem;
+  }
+
+  #generator {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 769px) {
+  #quote {
+    padding-top: 2rem;
+  }
+
+  #by {
+    padding-right: 1rem;
+  }
+
+  #sorting-hat-btn {
+    margin-top: 2rem;
+  }
+
+  #generator {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1026px) {
+  #sorting-description {
+    padding-left: 2rem;
+  }
+
+  #by {
+    padding-right: 1rem;
+  }
+}

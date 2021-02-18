@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+       title Harry Potter Fanpage
+       meta(name='viewport', content='width=device-width, initial-scale=1.0')
+       link(rel='icon', href='public/images/icons/pngwave.png')
+       link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css') 
+       link(rel='stylesheet', href='public/css/navbar.css')
+       link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap')
+    body
+        nav#navbar
+            span#hamburger-button
+                i.fa.fa-bars
+            a(href='home')
+                img#logo(src='/public/images/icons/logo2.png')
+            ul#js-menu.nav-menu
+                li
+                    a.nav-links(href='books') Books
+                li
+                    a.nav-links(href='houses') Houses
+                li
+                    a.nav-links(href='sorting-ceremony') Sorting Ceremony
+
+        script(type='text/javascript', src="/public/js/navbar.js")
+
+        block content
+            

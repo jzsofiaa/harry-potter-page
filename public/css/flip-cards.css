@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 6rem;
+    perspective: 1000px;
+}
+
+.card {
+   width: 15rem;
+   height: 25rem;
+   border-radius: 1rem;
+   margin-top: 2rem;
+   transition: transform 1.5s;
+   transform-style: preserve-3d;
+   cursor: pointer;
+}
+
+#gryffindor-card,
+#ravenclaw-card, 
+#slytherin-card {
+   margin-right: 2rem;
+}
+
+.card:hover {
+   transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.card-front, .card-back {
+   position: absolute;
+   width: 15rem;
+   height: 25rem;
+   backface-visibility: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 1rem;
+   box-shadow: 1em 1em 2em #000;
+}
+
+.card-front img {
+   width: 100%;
+   height: 100%;
+   border-radius: 1rem;
+}
+
+#gryffindor-card-back {
+   background-color: #d74f3f;
+   transform: rotateY(180deg);
+}
+
+#slytherin-card-back {
+   background-color: #005d4b;
+   transform: rotateY(180deg);
+}
+
+#ravenclaw-card-back {
+   background-color: #1f306a;
+   transform: rotateY(180deg);
+}
+
+#hufflepuff-card-back {
+   background-color: #fdb82d;
+   transform: rotateY(180deg);
+}
+
+.house-name {
+  font-size: 2.2rem;
+  font-family:'ZCOOL XiaoWei', serif;
+  letter-spacing: 0.2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.house-quote {
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: 'Crimson Text', serif;
+  line-height: 1.3;
+  margin-right: 2rem;
+  margin-left: 2rem;
+ }
+
+ @media (min-width: 320px) and (max-width: 480px) {
+   #gryffindor-card,
+   #ravenclaw-card, 
+   #slytherin-card {
+   margin-right: 0;
+   }
+}
+
+@media (min-width: 482px) and (max-width: 767px) {
+   #gryffindor-card,
+   #ravenclaw-card {
+   margin-right: 2rem;
+   }
+   #gryffindor-card {
+      margin-left: 3rem;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 769px) {
+   #gryffindor-card,
+   #ravenclaw-card {
+      margin-right: 2rem;
+   }
+   #gryffindor-card {
+      margin-left: 3rem;
+   }
+}
+
+@media (min-width: 1024px) and (max-width: 1026px) {
+   .card {
+      margin-bottom: 2rem;
+   }
+   #gryffindor-card,
+   #ravenclaw-card,
+   #slytherin-card {
+      margin-right: 8rem;
+   }
+
+   #gryffindor-card {
+      margin-left: 8rem;
+   }
+   
+}

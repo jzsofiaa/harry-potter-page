@@ -1,0 +1,22 @@
+extends navbar
+
+block content
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='public/css/sorting.css')
+    body       
+        div#sorting-title Sorting ceremony
+        div#sorting-generator
+          div#sorting-description
+            p#description In the early days of Hogwarts, the four founders handpicked students for their Houses. When the founders worried how students would be selected after their deaths, Godric Gryffindor took his hat off and each "put some brains" in it, creating the Sorting Hat to choose future students for each house. At the beginning of each school year, the magical Sorting Hat is placed on each new student's head during the Sorting ceremony.        
+            p#quote
+              i "The start-of-term banquet will begin shortly, but before you take your seats in the Great Hall, you will be sorted into your houses. The Sorting is a very important ceremony because, while you are here, your house will be something like your family within Hogwarts."
+            p#by - Minerva McGonagall
+          div#generator         
+            img#sorting-hat-btn(src="public/images/icons/sortinghat.png" alt="Sorting Hat")
+            p#find-out Click the Sorting Hat 
+              br 
+              | to find out which house you belong in!
+            p#sorting-result
+            p#sorting-result-description
+  
+    script(type='text/javascript', src="/public/js/req.js")

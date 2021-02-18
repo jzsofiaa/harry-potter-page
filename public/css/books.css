@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+}
+
+.books-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 3.5rem;
+  margin-top: 5rem;
+}
+
+.books-title {
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-size: 3rem;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 1.5rem;
+}
+
+#mobile-view-description {
+  display: none;
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#novel-cover-container {
+  width: 20rem;
+  height: 30rem;
+  cursor: pointer;
+  margin: 0 5rem 3rem 5rem;
+  box-shadow: 1em 1em 2em #000;
+}
+
+#book-cover-container {
+  width: 20rem;
+  height: 30rem;
+  cursor: pointer;
+  margin: 0 2rem 3rem 2rem;
+  box-shadow: 1em 1em 2em #000;
+}
+
+.book-cover-content {
+  position: relative;
+  width: 20rem;
+  height: 30rem;
+}
+
+.content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  width: 20rem;
+  height: 30rem;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+  display: flex;
+  align-items: center;
+}
+
+.book-cover-content:hover .content-overlay{
+  opacity: 1;
+}
+
+img {
+  width: 20rem;
+  height: 30rem;
+}
+
+.content-text {
+  color: #fff;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.05rem;
+  text-align: justify;
+  line-height: 1.5;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+#read-tale-container {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#read-tale-container p {
+   font-family: Times, serif;
+   font-size: 1.2rem;
+   text-align: center;
+  line-height: 1.5;
+}
+
+#read-tale-container p:nth-child(1) {
+  padding-bottom: 0.7rem;
+}
+
+#read-tale-container a {
+  color: #e05158;
+}
+
+#read-tale-container a:hover {
+  color: #e9858a;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #description {
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 1.5rem 1.3rem 0 1.3rem;
+  }
+
+  #description br {
+    display: none;
+  }
+
+  #mobile-view-description {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1.5rem 1.3rem 0 1.3rem;
+  }
+
+  img {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  .book-cover-container {
+    width: 20rem;
+    height: 30rem;
+    margin: 0 5rem 5rem 5rem;
+  }
+
+  .book-cover-content {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  .content-overlay {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  .content-text {
+    font-size: 1rem;
+  }
+
+  #read-tale-container {
+    width: 90%;
+  }
+
+  #read-tale-container {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 767px){
+  #description {
+    font-size: 1.2rem;
+    padding: 1.5rem 1.4rem 0 1.4rem;
+  }
+
+  #description br {
+    display: none;
+  }
+
+  #mobile-view-description {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1.5rem 1.3rem 0 1.3rem;
+  }
+
+  img {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  .book-cover-container {
+    width: 20rem;
+    height: 30rem;
+    margin: 0 5rem 5rem 5rem;
+  }
+
+  .book-cover-content {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  .content-overlay {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  .content-text {
+    font-size: 1rem;
+  }
+
+  #read-tale-container {
+    width: 80%;
+  }
+
+  #read-tale-container {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 769px) {
+  #description {
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem 0 3rem;
+  }
+
+  #mobile-view-description {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1.5rem 1.3rem 0 1.3rem;
+  }
+  
+  #read-tale-container {
+    width: 90%;
+  }
+
+  #read-tale-container {
+    text-align: justify;
+  }
+}
